@@ -1,6 +1,6 @@
 # Vibe Coding Playbook
 
-Reusable blueprints for building polished frontends without guessing. Plug in your palette, logo, and background art, then follow the page recipes to ship consistently good UX across projects.
+Reusable blueprints for building polished frontends without guessing. Plug in your palette, logo, and background art, then follow the page recipes to ship consistently good UX across projects. This playbook is written for use by an LLM or coding agent (e.g., Claude Code, Codex, Cursor) so you can drop it into your AI helper and have it execute the instructions verbatim.
 
 ## How to Use
 - **Set tokens first:** Define CSS variables for `background`, `foreground`, `muted`, `border`, `card`, `primary`, `primary-foreground`, `accent`, `positive`, `negative`, `warning`. Wire them to Tailwind theme (`colors` mapping to `var(--color-*)`).
@@ -22,4 +22,4 @@ Reusable blueprints for building polished frontends without guessing. Plug in yo
 - `motion-and-visuals.md` – Animation cadence, background treatments, and do/don’t list.
 - `playbook-instance-template.md` – Copy this into `docs/project-vibe.md` (outside this folder) for each project’s filled-in inputs so it’s easy to duplicate this folder without cleanup.
 - `glassmorphism.md` – Frosted glass pattern (blur + border + contrast rules) for hero/auth overlays or callouts.
-- **PRD alignment:** If the repo includes a PRD, mirror its scope/constraints. In this codebase, see `docs/PRD.md` for Hermes-specific goals, core screens (dashboard, accounts, categories, transactions), single-user auth stance, Supabase/RLS requirements, and performance targets (<1.5s dashboard load). Replace with your project’s PRD when reusing.
+- **PRD alignment:** If the repo includes a PRD, mirror its scope/constraints. Point to the local `docs/PRD.md` (or equivalent) for project goals, core screens, auth stance, data requirements, and performance targets, and update those references when reusing the playbook for a new project.
